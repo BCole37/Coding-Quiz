@@ -23,7 +23,7 @@ Just dealing with a large project like this with numerous elements keeping track
 allow the user to input their initials
 
 # Takaways
-THe java logic i have had more experience with so I have grasped it a little easier. But going over the solutions to all the activities really helps me get more out of them.
+The java logic I have had slightly more experience with than html and css so I have grasped it a little easier. But going over the solutions to all the activities really helps me get more out of them.
 
 # Sources For Help
  Bootcamp spot Module three ("https://coding-bootcamp-fsf-prework.readthedocs-hosted.com/en/latest/modules/chapter3/")
@@ -36,4 +36,4 @@ THe java logic i have had more experience with so I have grasped it a little eas
 (./images/Week4ScreenShot3)
 
 # Link
-[Link to the website](https://bcole37.github.io/Live-Portfolio/)
+[Link to the website](https://bcole37.github.io/Coding-Quiz/)
