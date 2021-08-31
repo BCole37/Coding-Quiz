@@ -63,20 +63,20 @@ function getQuestion() {
   // removes old choices
   choicesEl.innerHTML = "";
 
-  // loop through choices
+  // loop through answers
   currentQuestion.choices.forEach(function(choice, i) {
-    // create new button for each choice
-    var choiceButton = document.createElement("button");
-    choiceButton.setAttribute("class", "choice");
-    choiceButton.setAttribute("value", choice);
+    // create new button for each answer
+    var answerButton = document.createElement("button");
+    answerButton.setAttribute("class", "choice");
+    answerButton.setAttribute("value", choice);
 
-    choiceButton.textContent = i + 1 + ". " + choice;
+    answerButton.textContent = i + 1 + ". " + choice;
 
-    // looks for a click on each choice
-    choiceButton.addEventListener("click", questionClick);
+    // looks for a click on each answer
+    answerButton.addEventListener("click", questionClick);
 
     // display on the page
-    choicesEl.appendChild(choiceButton);
+    choicesEl.appendChild(answerButton);
   });
 }
 
