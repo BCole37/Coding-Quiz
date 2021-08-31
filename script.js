@@ -53,10 +53,10 @@ function startQuiz() {
 }
 
 function getQuestion() {
-  // gets current question from questions
+  // gets current question from questions variable
   var currentQuestion = questions[currentQuestionIndex];
 
-  // update title with current question
+  // update question
   var titleEl = document.getElementById("question-title");
   titleEl.textContent = currentQuestion.title;
 
@@ -72,7 +72,7 @@ function getQuestion() {
 
     choiceButton.textContent = i + 1 + ". " + choice;
 
-    // attach click event listener to each choice
+    // looks for a click on each choice
     choiceButton.addEventListener("click", questionClick);
 
     // display on the page
@@ -147,7 +147,7 @@ function saveHighscore() {
   var initials = initialsEl.value.trim();
 
   if (initials !== "") {
-    // get saved scores from localstorage, or set to empty
+    // get from localstorage or set to nothing
     var highscores =
       JSON.parse(window.localStorage.getItem("highscores")) || [];
 
