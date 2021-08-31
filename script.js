@@ -7,6 +7,29 @@ var startBtn = document.querySelector("#start");
 var initialsEl = document.querySelector("#initials");
 var feedbackEl = document.querySelector("#feedback");
 
+var questions = [
+  {
+    title: "Common Datatypes don't include?",
+    choices: ["strings", "arrays", "bools", "alerts"],
+    answer: "alerts"
+  },
+  {
+      title: "An if/else statement is clsoed in?",
+      choices: ["parentheses", "dashes", "quotes", "braces"],
+      answer: "parentheses"
+  },
+  {
+      title: "Java arrays store?",
+      choices: ["numbers and strings", "other arrays", "bools", "All the above"],
+      answer: "All the above"
+  },
+  {
+      title: "String values must be enclosed in?",
+      choices: ["parentheses", "dashes", "quotes", "braces"],
+      answer: "quotes"
+  }         
+];
+
 // quiz variables
 var currentQuestionIndex = 0;
 var time = questions.length * 15;
@@ -30,7 +53,7 @@ function startQuiz() {
 }
 
 function getQuestion() {
-  // gets current question from question
+  // gets current question from questions
   var currentQuestion = questions[currentQuestionIndex];
 
   // update title with current question
@@ -77,7 +100,7 @@ function questionClick() {
   feedbackEl.setAttribute("class", "feedback");
   setTimeout(function() {
     feedbackEl.setAttribute("class", "feedback hide");
-  }, 1000);
+  }, 2000);
 
   // next question
   currentQuestionIndex++;
